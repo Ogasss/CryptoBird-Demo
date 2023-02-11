@@ -7,7 +7,7 @@
             </span>
         </header>
 
-        <main>
+        <main class="main">
             <div v-for="option in optionArr" :key="option[1]">
                 <Option :src="option[0]" :text="option[1]"/>
             </div>
@@ -93,6 +93,16 @@ export default {
             justify-content: center;
         }
         .logOut{
+        }
+    }
+    @media (max-height:530px){
+        .main{
+            display: none;
+        }
+        .theWrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 </style>
