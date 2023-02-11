@@ -92,22 +92,16 @@ export default {
         .title{
             justify-content: center;
         }
-        .logOut{
-        }
     }
-    @media (max-height:530px){
-        .main{
-            display: none;
-        }
-        .theWrapper{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
+    
     @media (max-height:1200px){
         .logOut{
             margin-top: calc(100vh - 460px - 40px);
+        }
+    }
+    @media (max-height: 920px){
+        .logOut{
+            margin-top: 420px
         }
     }
 </style>
