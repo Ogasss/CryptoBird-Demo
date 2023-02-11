@@ -27,18 +27,19 @@ export default {
 
 <style scoped>
     .layoutWrapper{
-        width: 100%;
-        height: 100%;
+        width: 1920px;
+        height: 1200px;
         display: flex;
     }
     .asideWrapper{        
         width: 13.75%;
         height: 100%;
+        /* display: none; */
     }
     .mainWrapper{
         width: 54.59%;
         height: 100%;
-        display: none;
+        /* display: none; */
     }
     .actionWrapper{
         width: 31.66%;

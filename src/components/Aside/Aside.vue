@@ -61,7 +61,7 @@ export default {
     .theAsideWrapper{
         padding: 40px 32px;
         min-width: 88px;
-        height: 100vh;
+        height: 100%;
         background: #1A1A1A;
     }
     .title{
@@ -83,7 +83,7 @@ export default {
         line-height: 26px;
     }
     .logOut{
-        margin-top: calc(100vh - 460px - 40px);
+        margin-top: calc(1200px - 460px - 40px);
     }
     @media (max-width: 1500px){
         .titleText{
