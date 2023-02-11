@@ -81,10 +81,11 @@ export default {
 <style scoped>
     .AssetsMainWrapper{
         width: 100%;
-        height: 88.5%;
+        height: 81%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        overflow: auto;
     }
     .AssetsMainWrapper::-webkit-scrollbar{
         display: none;
@@ -92,6 +93,11 @@ export default {
     .AssetsMainWrapper .asset{
         height: 218px;
         margin-bottom: 24px;
+    }
+    @media (max-width: 1720px){
+        .AssetsMainWrapper{
+            height: calc(90% - 40px);
+        }
     }
     @media (max-width: 1845px){
         .AssetsMainWrapper{

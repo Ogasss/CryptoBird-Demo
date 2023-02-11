@@ -27,8 +27,11 @@ export default {
 
 <style scoped>
     .layoutWrapper{
-        width: 1920px;
-        height: 1200px;
+        width: 100vw;
+        min-width: 1215px;
+        /* height: 1200px; */
+        height: 100vh;
+        min-height: 920px;
         display: flex;
         overflow: hidden;
     }

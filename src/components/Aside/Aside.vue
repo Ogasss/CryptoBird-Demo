@@ -105,4 +105,9 @@ export default {
             align-items: center;
         }
     }
+    @media (max-height:1200px){
+        .logOut{
+            margin-top: calc(100vh - 460px - 40px);
+        }
+    }
 </style>

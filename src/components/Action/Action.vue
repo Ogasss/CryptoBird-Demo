@@ -43,7 +43,13 @@ export default {
     }
     .theActionWrapper > .myAssets{
         width: 100%;
-        height: 52.16%;
+        height: calc(52.16% + 43px);
+    }
+    @media (max-height: 980px){
+        .theActionWrapper > .myAssets{
+            width: 100%;
+            height: 42.16%;
+        }
     }
     @media (max-width: 1720px){
         .convert{
