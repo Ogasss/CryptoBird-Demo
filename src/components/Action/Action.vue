@@ -42,11 +42,16 @@ export default {
         margin-bottom: 3.7%;
     }
     .theActionWrapper > .myAssets{
-
+        width: 100%;
+        height: 52.16%;
     }
     @media (max-width: 1720px){
         .convert{
             display: none;
+        }
+        .theActionWrapper > .myAssets{
+            height: 100%;
+            width: 100%;
         }
     }
 </style>

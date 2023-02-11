@@ -30,6 +30,7 @@ export default {
         width: 1920px;
         height: 1200px;
         display: flex;
+        overflow: hidden;
     }
     .asideWrapper{        
         width: 13.75%;

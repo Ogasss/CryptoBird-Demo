@@ -1,15 +1,15 @@
 <template>
     <div class="AssetWrapper">
         <header class="AssetHeader">
-            <img :src="src" alt="">
+            <img :src="icon" alt="">
             <div class="AssetText">
-                <span class="title">{{title}}</span>
-                <span class="simpleName">{{simpleName}}</span>
+                <span class="title">{{name}}</span>
+                <span class="simpleName">{{simple}}</span>
             </div>
         </header>
 
         <main class="AssetMain">
-
+            <img :src="trendImage" alt="">
         </main>
 
         <footer class="AssetFooter">
@@ -25,23 +25,20 @@
 </template>
 
 <script>
-import src from '../../assets/icons/Action/BTC.svg'
 import up from '../../assets/icons/Action/Up.svg'
 
 export default {
+    props:[
+        "name",
+        "simple",
+        "price",
+        "trendType",
+        "trend",
+        "icon",
+        "trendImage"
+    ],
     setup(){
-        const title = 'Bitcoin'
-        const simpleName = 'BTC'
-        const price = '$17.780,16'
-        const trend = 1.2
-        const trendType = '+'
-        return {
-            src,
-            title,
-            simpleName,
-            price,
-            trend,
-            trendType,
+        return{
             up
         }
     }
@@ -50,6 +47,8 @@ export default {
 
 <style scoped>
     .AssetWrapper{
+        display: flex;
+        flex-direction: column;
         padding: 24px;
         background: #121212;
         border-radius: 16px;
@@ -121,5 +120,6 @@ export default {
         margin-bottom: 16px;
         width: 180px;
         height: 60px;
+        margin: auto;
     }
 </style>

@@ -1,11 +1,7 @@
 <template>
     <div class="theMyAssetsWrapper">
-        <div>
-            <Header/>
-        </div>
-        <div>
-            <Main/>
-        </div>
+        <Header/>
+        <Main/>
     </div>
 </template>
 
@@ -19,3 +15,10 @@ export default {
     }
 }
 </script>
+
+<style>
+    .theMyAssetsWrapper{
+        height: 100%;
+        width: 100%;
+    }
+</style>
