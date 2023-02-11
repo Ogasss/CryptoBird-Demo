@@ -53,6 +53,9 @@ export default {
         background: #121212;
         border-radius: 16px;
     }
+    .AssetWrapper:hover{
+        background: #333;
+    }
     .AssetWrapper header img{
         width: 48px;
         height: 48px;
