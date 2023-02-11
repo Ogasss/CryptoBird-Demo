@@ -64,4 +64,7 @@ body{
     display: flex;
     position: absolute;
 }
+img{
+  transition: all 0.3s ease;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="layoutWrapper">
         <div class="asideWrapper">
-            <Aside />
+            <Aside/>
         </div>
 
         <div class="mainWrapper">
@@ -9,16 +9,18 @@
         </div>
 
         <div class="actionWrapper">
-
+            <Action/>
         </div>
     </div>
 </template>
 
 <script>
 import Aside from '../Aside/Aside.vue'
+import Action from '../Action/Action.vue'
 export default {
     components:{
-        Aside
+        Aside,
+        Action
     }
 }
 </script>
@@ -34,14 +36,11 @@ export default {
         height: 100%;
     }
     .mainWrapper{
-        border: 1px solid red;
-
         width: 54.59%;
         height: 100%;
+        display: none;
     }
     .actionWrapper{
-        border: 1px solid red;
-
         width: 31.66%;
         height: 100%;
     }

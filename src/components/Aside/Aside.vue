@@ -1,5 +1,5 @@
 <template>
-    <div class="theWrapper">
+    <div class="theAsideWrapper">
         <header class="title">
             <img :src="logo"/>
             <span class="titleText">
@@ -22,14 +22,14 @@
 </template>
 
 <script>
-import logo from '../../assets/icons/logo.svg'
-import AsideOption1 from '../../assets/icons/AsideOption1.svg'
-import AsideOption2 from '../../assets/icons/AsideOption2.svg'
-import AsideOption3 from '../../assets/icons/AsideOption3.svg'
-import AsideOption4 from '../../assets/icons/AsideOption4.svg'
-import AsideOption5 from '../../assets/icons/AsideOption5.svg'
-import AsideOption6 from '../../assets/icons/AsideOption6.svg'
-import AsideOption7 from '../../assets/icons/AsideOption7.svg'
+import logo from '../../assets/icons/Aside/logo.svg'
+import AsideOption1 from '../../assets/icons/Aside/AsideOption1.svg'
+import AsideOption2 from '../../assets/icons/Aside/AsideOption2.svg'
+import AsideOption3 from '../../assets/icons/Aside/AsideOption3.svg'
+import AsideOption4 from '../../assets/icons/Aside/AsideOption4.svg'
+import AsideOption5 from '../../assets/icons/Aside/AsideOption5.svg'
+import AsideOption6 from '../../assets/icons/Aside/AsideOption6.svg'
+import AsideOption7 from '../../assets/icons/Aside/AsideOption7.svg'
 import Option from './Option.vue'
 
 export default {
@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style scoped>
-    .theWrapper{
+    .theAsideWrapper{
         padding: 40px 32px;
         min-width: 88px;
         height: 100vh;
