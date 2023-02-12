@@ -90,12 +90,14 @@ export default {
         padding: 36px 64px;
         width: 100%;
         height: 44.25%;
+        display: flex;
+        flex-direction: column;
     }
     .theDashBoardWrapper header{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 74px;
+        margin-bottom: auto;
     }
     .theDashBoardWrapper header > .title{
         font-family: 'Aeonik';
@@ -127,7 +129,7 @@ export default {
 
     
     .theDashBoardWrapper main{
-        margin-bottom: 102px;
+        margin-bottom: auto;
     }
     .theDashBoardWrapper main > .title{
         font-family: 'Aeonik';
@@ -236,19 +238,8 @@ export default {
         line-height: 17px;
         color: #d1d1d1;
     }
-    @media (max-height: 1080px){
-        .theDashBoardWrapper main{
-            margin-bottom: 4.5%;
-        }
-        .theDashBoardWrapper header{
-            margin-bottom: 6.16%;
-        }
-    }
+
     @media (max-width: 1440px){
-        .theDashBoardWrapper main{
-            /* border: 1px solid red; */
-            margin-bottom: 9%;
-        }
         .theDashBoardWrapper footer .date .line{
             margin-right: 16px;
         }

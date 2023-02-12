@@ -40,7 +40,7 @@ export default {
     .asideWrapper{        
         width: 13.75%;
         height: 100%;
-        /* display: none; */
+        display: none;
     }
     .mainWrapper{
         width: 54.59%;
@@ -49,7 +49,7 @@ export default {
     .actionWrapper{
         width: 31.66%;
         height: 100%;
-        /* display: none; */
+        display: none;
     }
     
 </style>
