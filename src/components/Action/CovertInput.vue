@@ -25,7 +25,7 @@
 </template>
 <script>
 import {ref} from 'vue'
-import down from '../../assets/icons/Action/down.svg'
+import down from '../../assets/icons/Action/more.svg'
 import BTC from '../../assets/icons/Action/BTC.svg'
 import USDT from '../../assets/icons/Action/USDT.svg'
 import ETH from '../../assets/icons/Action/ETH.svg'

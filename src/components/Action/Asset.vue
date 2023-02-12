@@ -14,11 +14,11 @@
 
         <footer class="AssetFooter">
             <span class="price">{{price}}</span>
-            <button class="trend">
+            <button :class="style">
                 <span class="trendText">
                     {{trendType}}{{trend}}%
                 </span>
-                <img class="trendIcon" :src="up" alt="">                    
+                <img class="trendIcon" :src="src" alt="">                    
             </button>
         </footer>
     </div>
@@ -26,6 +26,7 @@
 
 <script>
 import up from '../../assets/icons/Action/Up.svg'
+import down from '../../assets/icons/Action/Down.svg'
 
 export default {
     props:[
@@ -37,9 +38,19 @@ export default {
         "icon",
         "trendImage"
     ],
-    setup(){
+    setup(props){
+        let src 
+        let style
+        if(props.trendType === '+'){
+            src = up
+            style = "trend up"
+        }else{
+            src = down
+            style = "trend down"
+        }
         return{
-            up
+            src,
+            style
         }
     }
 }
@@ -102,7 +113,6 @@ export default {
         width: 73px;
         height: 30px;
         border-radius: 32px;
-        background: rgba(46, 190, 123, 0.2);
     }
     .trend .trendText{
         font-family: 'Aeonik';
@@ -110,13 +120,15 @@ export default {
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
-        color: #2EBE7B;
+        
     }
     .AssetFooter .down{
-
-    }
+        color: #DA5C54;
+        background: rgba(218, 92, 84, 0.2);
+    }   
     .AssetFooter .up{
-
+        color: #2EBE7B;
+        background: rgba(46, 190, 123, 0.2);
     }
     .AssetWrapper .AssetMain{
         margin-top: 16px;

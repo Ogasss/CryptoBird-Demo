@@ -21,7 +21,7 @@
 
 <script>
 import {ref} from 'vue'
-import down from '../../assets/icons/Action/down.svg'
+import down from '../../assets/icons/Action/more.svg'
 export default {
     setup(){
         const options = ['Popular','New','Viewed']
