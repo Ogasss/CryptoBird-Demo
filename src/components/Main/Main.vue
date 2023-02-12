@@ -1,6 +1,6 @@
 <template>
     <div class="theMainWrapper">
-        <DashBoard/>
+        <DashBoard class="Dashboard"/>
         <div class="theMainLine">
 
         </div>
@@ -24,6 +24,8 @@ export default {
         width: 100%;
         height: 100%;
         background: #101010;
+    }
+    .theMainWrapper .Dashboard{
     }
     .theMainLine{
         border: 1px solid #292929;

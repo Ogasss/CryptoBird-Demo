@@ -31,8 +31,8 @@ export default {
     .layoutWrapper{
         width: 100vw;
         min-width: 1215px;
-        /* height: 1200px; */
         height: 100vh;
+        /* height: 1200px; */
         min-height: 920px;
         display: flex;
         overflow: hidden;
@@ -40,7 +40,6 @@ export default {
     .asideWrapper{        
         width: 13.75%;
         height: 100%;
-        display: none;
     }
     .mainWrapper{
         width: 54.59%;
@@ -49,7 +48,6 @@ export default {
     .actionWrapper{
         width: 31.66%;
         height: 100%;
-        display: none;
     }
     
 </style>
