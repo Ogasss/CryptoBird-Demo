@@ -3,14 +3,12 @@
     <div class="appWrapper">
       <Layout/>
     </div>
-    
   </div>
 </template>
 
 <script>
 import Layout from './components/views/Layout.vue'
 export default {
-  name: 'App',
   components:{
     Layout
   }
@@ -57,6 +55,7 @@ input{
   outline: 0;
 }
 body{
+  transition: all 0.3s ease;
 }
 .appWrapper{
     width: 100vw;

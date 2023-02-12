@@ -1,7 +1,7 @@
 <template>
 <div class="theConvertInputWrapper">
     <div class="theConvertInput">
-        <input type="text" placeholder="Please input">
+        <input type="number" placeholder="Please input">
         <button @click="onClick" class="theConvertListButton">
             <img class="convertIcon" :src="chosedOption[0]">
             <span>{{chosedOption[1]}}</span>
@@ -74,6 +74,7 @@ export default {
         width: 60%;
         height: 100%;
         margin-left: 16px;
+        color: #FFFFFF;
     }
     .theConvertInput > input:focus{
         width: 60%;
