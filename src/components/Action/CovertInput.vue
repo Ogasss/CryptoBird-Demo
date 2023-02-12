@@ -1,7 +1,7 @@
 <template>
 <div class="theConvertInputWrapper">
     <div class="theConvertInput">
-        <input type="number" placeholder="Please input">
+        <input type="text" placeholder="Please input">
         <button @click="onClick" class="theConvertListButton">
             <img class="convertIcon" :src="chosedOption[0]">
             <span>{{chosedOption[1]}}</span>
